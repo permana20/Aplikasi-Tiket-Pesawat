@@ -13,11 +13,11 @@ B.dengan mengisi kunci public_key dan menambahkan nilai ascii misalkan 3 untuk p
 
 ANGGOTA KELOMPOK:
 
-Alfredo Silalahi (18.83.0332)
-Mukhamad Iqbal Refai (18.83.0319)
-Muh.Iksan Raqila (18.83.0279)
-Tri Yono (18.83.0317)
-Permana Bangun P (18.83.0329)
+- Alfredo Silalahi (18.83.0332)
+- Mukhamad Iqbal Refai (18.83.0319)
+- Muh.Iksan Raqila (18.83.0279)
+- Tri Yono (18.83.0317)
+- Permana Bangun P (18.83.0329)
 
 
 TOOLS:
@@ -27,3 +27,5 @@ REFERENSI:
 https://dasprog4.blogspot.com/ 
 http://maupintarinternetan.blogspot.com/2012/05/program-sederhanan-c-untuk-penjulan.html
 https://kumpulan-tips-seo.blogspot.com/2016/12/tutorial-tips-cara-membuat-tiket.html
+
+
