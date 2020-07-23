@@ -24,8 +24,11 @@ TOOLS:
 Dev++ Version 5.11 
 
 REFERENSI:
+
 https://dasprog4.blogspot.com/ 
+
 http://maupintarinternetan.blogspot.com/2012/05/program-sederhanan-c-untuk-penjulan.html
+
 https://kumpulan-tips-seo.blogspot.com/2016/12/tutorial-tips-cara-membuat-tiket.html
 
 
