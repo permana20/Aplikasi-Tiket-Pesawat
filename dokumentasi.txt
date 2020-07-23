@@ -1,0 +1,124 @@
+#include <iostream>  //memanggil library iostream
+#include <conio.h> //memanggil berkas conio untuk menampilkan hasil antarmuka
+#include <stdio.h> /*eaderyang berisi definisi makro, konstanta, dan deklarasi fungsi dan jenis yang digunakan untuk berbagai standard input dan
+ output operasi.*/
+#include <string.h> //memanggil library string
+using namespace std; //untuk memberitahu kepada kompiler bahwa kita akan menggunakan semua fungsi,class, atau file yang terdapat pada memori namespapce std.
+main()
+{
+char nama[50],kode,tujuan_pesawat[15],pesawat[20],yes; //untuk mendeklarasikan variable nama[50],kode,tujuan_pesawat[15],pesawat[20],yes
+int harga,beli,total,bayar,kembali,kelas; //untuk mendeklarasikan variable harga,beli,total,bayar,kembali,kelas
+printf("**********************************************\n"); //untuk menampilkan teks/simbol pada terminal cmd
+printf("\tBIMA SATRYA GARUDA TRAVEL\n"); //untuk menampilkan teks BIMA SATRYA GARUDA TRAVEL
+printf("**********************************************\n"); //untuk menampilkan teks/simbol pada terminal cmd
+cout<<"\tDestination:\n"; //untuk menampilkan teksdestination
+cout<<"\tJakarta-->Singapore\n"; //untuk menampilkan teks Jakarta-->Singapore
+cout<<"\tJakarta-->Taipei\n"; //untuk menampilkan teks Jakarta-->Taipei
+cout<<"\tJakarta-->Madinah\n"; //untuk menampilkan teks Jakarta-->Madinah
+cout<<"\tJakarta-->Kyoto\n"; //untuk menampilkan teks Jakarta-->Kyoto
+cout<<"**********************************************\n"; //untuk menampilkan teks/simbol pada terminal cmd
+cout<<"Class\n"; //untuk menampilkan teks class
+cout<<"1.Economy\n"; //untuk menampilkan teks 1.Economy
+cout<<"2.Business\n"; //untuk menampilkan teks 2.Business
+cout<<"3.VIP\n"; //untuk menampilkan teks 3.VIP
+cout<<"Nama : ";cin.getline(nama,50); //menampilkan masukan nama cmd/terminal
+cout<<"Tujuan Pesawat [S/T/M/K]: ";cin>>kode; 
+cout<<"Nama Pesawat : ";cin>>pesawat; //menampilkan masukan nama pesawat
+cout<<"Kelas : ";cin>>kelas; //menampilkan masukan kelas
+cout<<"Jumlah Pemesanan : ";cin>>beli; //untuk menampilkan teks Jumlah Pemesanan
+
+if (kode=='S' || kode=='s') //kondisi jka S/s
+{
+strcpy(tujuan_pesawat,"Jakarta-Singapore"); //menampikan teks tujuan pesawat jakarta-singapore
+if (kelas==1) //jika kondisi 1
+harga=1050000; //pernyataan data harga dari konsidi 1
+else if(kelas==2)//jika kondisi 2
+harga=2100000;//pernyataan data harga dari konsidi 2
+else if(kelas==3)//jika kondisi 3
+harga=3401000;//pernyataan data harga dari konsidi 3
+else 
+cout<<"kode anda salah"<<endl<<endl; //menampilkan teks kode anda salah
+}
+
+else if (kode=='T' || kode=='t')//kondisi jka T/t
+{
+strcpy(tujuan_pesawat,"Jakarta-Taipei");//menampikan teks tujuan pesawat jakarta-Taipe
+if (kelas==1)//jika kondisi 1
+harga=1800000;//pernyataan data harga dari konsidi 1
+else if(kelas==2)//jika kondisi 2
+harga=2850000;//pernyataan data harga dari konsidi 2
+else if(kelas==3)//jika kondisi 3
+harga=4015000;//pernyataan data harga dari konsidi 3
+else
+cout<<"kode anda salah"<<endl<<endl;//menampilkan teks kode anda salah
+}
+
+else if (kode=='M' || kode=='m')//kondisi jka M/m
+{
+strcpy(tujuan_pesawat,"Jakarta-->Madinah");//menampikan teks tujuan pesawat jakarta-Madinah
+if (kelas==1)//jika kondisi 1
+harga=10200000;//pernyataan data harga dari konsidi 1
+else if(kelas==2)//jika kondisi 2
+harga=10500000;//pernyataan data harga dari konsidi 2
+else if(kelas==3)//jika kondisi 3
+harga=30000000;//pernyataan data harga dari konsidi 3
+else
+cout<<"kode anda salah"<<endl<<endl;//menampilkan teks kode anda salah
+
+}
+else if (kode=='K' || kode=='k')//kondisi jka K/k
+{
+strcpy(tujuan_pesawat,"Jakarta-->Kyoto");//menampikan teks tujuan pesawat jakarta-kyoto
+if (kelas==1)//jika kondisi 1
+harga=1200000;//pernyataan data harga dari konsidi 1
+else if(kelas==2)//jika kondisi 2
+harga=2500000;//pernyataan data harga dari konsidi 2
+else if(kelas==3)//jika kondisi 3
+harga=3000000;//pernyataan data harga dari konsidi 3
+else
+cout<<"kode anda salah"<<endl<<endl;//menampilkan teks kode anda salah
+
+}
+else
+cout<<"ANDA SALAH MEMASUKAN KODE"<<endl; //untuk menampilkan teks ANDA SALAH MEMASUKAN KODE
+
+total=beli*harga; // program perkalian (beli X harga)
+
+printf("\tTRANSAKSI PENJUALAN TIKET PESAWAT\n"); //untuk menampilkan teks/simbol pada terminal cmd
+printf("**********************************************\n\n"); //untuk menampilkan teks/simbol pada terminal cmd
+cout<<"Nama : "<<nama<<endl; //untuk menampilkan nama
+cout<<"Tujuan Pesawat : "<<tujuan_pesawat<<endl; //untuk menampilkan Tujuan pesawat
+cout<<"Nama Pesawat : "<<pesawat<<endl; //untuk menampilkan nama Pesawat
+cout<<"Kelas : "<<kelas<<endl; //untuk menampilkan kelas
+cout<<"Harga : "<<harga<<endl; //untuk menampilkan harga
+cout<<"Jumlah Pemesanan : "<<beli<<endl; //untuk menampilkan jumlah pemesanan
+cout<<"Total Harga : "<<total<<endl<<endl; //untuk menampilkan total harga
+
+
+printf("\tPEMBAYARAN\n"); //untuk menampilkan teks/simbol pada terminal cmd
+printf("****************************************\n\n"); //untuk menampilkan teks/simbol pada terminal cmd
+cout<<"Uang Bayar : ";cin>>bayar; //untuk menampilkan uang bayar
+kembali=bayar-total; //untuk program pengurangan (bayar-total)
+cout<<"Uang Kembali : "<<kembali<<endl<<endl; //untuk menampilkan uang kembalian
+cout<<"_____________TERIMAKASIH_________________"<<endl<<endl; //untuk menampilkan teks/simbol Terimakasih
+
+
+bawah:
+cout<<" Anda Ingin Mencoba Lagi ????"<<endl; //untuk menampilkan teks/simbol pada terminal cmd
+cout<<" Tekan Y atau N : "; cin>>yes; //untuk menampilkan input Tekan Y atau N
+if(yes=='Y'||yes=='y')//kondisi jka Y/y
+{
+
+goto atas;//program akan kembali ka atas/ dimulai kembali
+}
+else if(yes=='N'||yes=='n')//kondisi jika N/n
+{
+
+cout<<"\n THANK YOU";//menampilkan teks THANK YOU
+}
+else{
+
+cout<<"\n THANK YOU";//kondisi jka T/t
+}
+return 0; //untuk mengembalikan nilai tapi karena (0) program tidak akan menampilkan keluaran apapun.
+}
